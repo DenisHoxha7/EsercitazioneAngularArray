@@ -1,10 +1,8 @@
-
 <div class="card mt-4">
-    <div class="card-body">
-      <h2 class="card-title">{{ product.name }}</h2>
-    </div>
-    <h3>Dettaglio Prodotto</h3>
+  <div class="card-body">
+    <h2 class="card-title">{{ product?.name }}</h2>
     <div *ngIf="product">
+      <h3>Dettaglio Prodotto</h3>
       <p>Nome: {{ product.name }}</p>
       <p>Prezzo: ${{ product.price }}</p>
       <p>Descrizione: {{ product.description }}</p>
@@ -13,3 +11,4 @@
       <p>Seleziona un prodotto per visualizzare i dettagli.</p>
     </div>
   </div>
+</div>

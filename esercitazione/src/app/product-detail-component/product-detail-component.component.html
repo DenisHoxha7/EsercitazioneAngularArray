@@ -1,13 +1,13 @@
 <div class="card mt-4">
   <div class="card-body">
-    <h2 class="card-title">{{ product?.name }}</h2>
-    <div *ngIf="product">
+    <h2 class="card-title">{{ product?.name }}</h2><!-- il punto interrogativo serve per evitare errori se product è null o undefined -->
+    <div *ngIf="product"> <!--mostra i dettagli solo se è stato selezionato un prodotto-->
       <h3>Dettaglio Prodotto</h3>
       <p>Nome: {{ product.name }}</p>
       <p>Prezzo: ${{ product.price }}</p>
       <p>Descrizione: {{ product.description }}</p>
     </div>
-    <div *ngIf="!product">
+    <div *ngIf="!product"> <!--mostra un messaggio se nessun prodotto è selezionato-->
       <p>Seleziona un prodotto per visualizzare i dettagli.</p>
     </div>
   </div>

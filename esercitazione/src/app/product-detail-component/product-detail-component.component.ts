@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
+//riceve i dati dal componente padre cioè ProductListComponent
 @Component({
   selector: 'app-product-detail-component',
   imports: [CommonModule],
